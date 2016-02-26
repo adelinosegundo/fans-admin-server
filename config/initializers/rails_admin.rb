@@ -34,4 +34,10 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+  config.model Match do
+    configure :rooms do
+      queryable true
+      searchable :all
+    end
+  end
 end

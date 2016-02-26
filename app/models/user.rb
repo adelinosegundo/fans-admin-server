@@ -5,7 +5,7 @@ class User
 
   before_save :md5_password
 
-  attr_accessor :password
+  attr_accessor :password, :password_confirmation
 
   def md5_password
     if password 
