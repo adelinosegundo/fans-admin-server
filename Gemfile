@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.5'
-gem 'sqlite3'
 
 gem 'mongoid', '~> 5.1.0'
 gem 'rails_admin'
@@ -19,6 +18,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'sqlite3'
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
